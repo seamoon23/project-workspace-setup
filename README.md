@@ -84,6 +84,10 @@ workspace-setup/
     └── claude-section.md           CLAUDE.md에 병합할 폴더 구조 절
 ```
 
+## 관련 스킬
+
+- [claude-md-slim](https://github.com/seamoon23/claude-md-slim) — 무거운 CLAUDE.md를 핵심 규칙 + 작업유형별 참조 문서(`docs/guide/`)로 분할하는 자매 스킬.
+
 ## License
 
 MIT
