@@ -1,0 +1,5 @@
+# --- 저장소 3분할 구조 (workspace.md 참조) ---
+/dev/
+/works/
+# docs/ 도 git 제외를 택한 경우 아래 주석 해제
+# /docs/
