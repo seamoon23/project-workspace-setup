@@ -84,9 +84,10 @@ project-workspace-setup/
     └── claude-section.md           CLAUDE.md에 병합할 폴더 구조 절
 ```
 
-## 관련 스킬
+## 관련 스킬 (project-* 세트)
 
 - [project-md-slim](https://github.com/seamoon23/project-md-slim) — 무거운 CLAUDE.md를 핵심 규칙 + 작업유형별 참조 문서(`docs/guide/`)로 분할하는 자매 스킬.
+- [project-artifacts](https://github.com/seamoon23/project-artifacts) — SI 표준 산출물(테이블·컬럼·코드정의서, 프로그램설명서, ERD) 생성/갱신. 산출물은 이 스킬이 만드는 3분할 구조의 `docs/산출물/`에 쌓인다.
 
 ## License
 
