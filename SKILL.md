@@ -1,9 +1,9 @@
 ---
-name: workspace-setup
+name: project-workspace-setup
 description: 프로젝트 저장소에 dev/docs/works 3분할 폴더 구조, workspace.md 사이트맵, AGENTS.md(CLAUDE.md 참조), .gitignore 규칙을 셋팅한다. 모드 - (없음) 전체 셋팅 / dry-run 계획만 / audit 규칙 점검 / update 사이트맵 동기화. "폴더 구조 셋팅", "워크스페이스 초기화", "저장소 정리" 요청 시 사용.
 ---
 
-# workspace-setup — 저장소 3분할 구조 셋팅
+# project-workspace-setup — 저장소 3분할 구조 셋팅
 
 프로젝트 저장소를 **"소스는 소스대로, 문서는 문서대로, 1회성 작업물은 따로"** 나눠 정리하는 스킬.
 한 번 셋팅해두면 "이 파일 어디에 두지?"를 매번 고민하지 않아도 되고, git에는 코드와 저술 원본만 남는다.
@@ -13,10 +13,10 @@ description: 프로젝트 저장소에 dev/docs/works 3분할 폴더 구조, wor
 
 | 호출 | 동작 | 파일 변경 |
 | --- | --- | --- |
-| `/workspace-setup` | 전체 셋팅. **계획표를 먼저 보여주고, 승인받은 뒤에만 실행** | 승인 후에만 |
-| `/workspace-setup dry-run` | 전체 셋팅과 같은 분석을 하되 계획표 출력까지만 | 없음 |
-| `/workspace-setup audit` | 이미 셋팅된 저장소가 규칙대로 유지되고 있는지 점검 | 없음 (보고만) |
-| `/workspace-setup update` | workspace.md 사이트맵을 실제 폴더 상태와 동기화 | workspace.md만 |
+| `/project-workspace-setup` | 전체 셋팅. **계획표를 먼저 보여주고, 승인받은 뒤에만 실행** | 승인 후에만 |
+| `/project-workspace-setup dry-run` | 전체 셋팅과 같은 분석을 하되 계획표 출력까지만 | 없음 |
+| `/project-workspace-setup audit` | 이미 셋팅된 저장소가 규칙대로 유지되고 있는지 점검 | 없음 (보고만) |
+| `/project-workspace-setup update` | workspace.md 사이트맵을 실제 폴더 상태와 동기화 | workspace.md만 |
 
 처음이면 `dry-run`부터 돌려보는 것을 권한다. 무엇이 어떻게 바뀔지 변경 없이 전부 볼 수 있다.
 

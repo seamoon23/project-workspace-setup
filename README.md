@@ -1,4 +1,4 @@
-# workspace-setup
+# project-workspace-setup
 
 Claude Code용 저장소 정리 스킬. 프로젝트 저장소를 **3분할 구조(dev / docs / works)** 로 정리하고, 사이트맵(`workspace.md`)과 에이전트 진입점(`AGENTS.md`)을 셋팅합니다.
 
@@ -29,13 +29,13 @@ Claude Code가 설치되어 있어야 합니다.
 **Windows (PowerShell)**
 
 ```powershell
-git clone https://github.com/seamoon23/workspace-setup.git "$env:USERPROFILE\.claude\skills\workspace-setup"
+git clone https://github.com/seamoon23/project-workspace-setup.git "$env:USERPROFILE\.claude\skills\project-workspace-setup"
 ```
 
 **macOS / Linux**
 
 ```bash
-git clone https://github.com/seamoon23/workspace-setup.git ~/.claude/skills/workspace-setup
+git clone https://github.com/seamoon23/project-workspace-setup.git ~/.claude/skills/project-workspace-setup
 ```
 
 ### 팀·프로젝트용 (저장소를 쓰는 모든 팀원에게 적용)
@@ -43,7 +43,7 @@ git clone https://github.com/seamoon23/workspace-setup.git ~/.claude/skills/work
 프로젝트 저장소 안에 넣고 커밋하면, 그 저장소에서 Claude Code를 쓰는 팀원 모두가 사용할 수 있습니다.
 
 ```bash
-git clone https://github.com/seamoon23/workspace-setup.git <프로젝트>/.claude/skills/workspace-setup
+git clone https://github.com/seamoon23/project-workspace-setup.git <프로젝트>/.claude/skills/project-workspace-setup
 # .git 폴더는 제거 후 프로젝트에 커밋 (또는 파일만 복사)
 ```
 
@@ -57,10 +57,10 @@ Claude Code 대화창에서:
 
 | 명령 | 동작 | 파일 변경 |
 | --- | --- | --- |
-| `/workspace-setup` | 전체 셋팅. **계획표를 먼저 보여주고 승인 후에만 실행** | 승인 후에만 |
-| `/workspace-setup dry-run` | 계획표 출력까지만. 처음이면 이것부터 | 없음 |
-| `/workspace-setup audit` | 셋팅된 저장소가 규칙대로 유지되는지 점검 | 없음 |
-| `/workspace-setup update` | `workspace.md`를 실제 폴더 상태와 동기화 | workspace.md만 |
+| `/project-workspace-setup` | 전체 셋팅. **계획표를 먼저 보여주고 승인 후에만 실행** | 승인 후에만 |
+| `/project-workspace-setup dry-run` | 계획표 출력까지만. 처음이면 이것부터 | 없음 |
+| `/project-workspace-setup audit` | 셋팅된 저장소가 규칙대로 유지되는지 점검 | 없음 |
+| `/project-workspace-setup update` | `workspace.md`를 실제 폴더 상태와 동기화 | workspace.md만 |
 
 ## 안전 원칙
 
@@ -75,7 +75,7 @@ Claude Code 대화창에서:
 ## 폴더 구성
 
 ```
-workspace-setup/
+project-workspace-setup/
 ├── SKILL.md                        스킬 본문 (절차·모드·안전 원칙)
 └── templates/
     ├── AGENTS.md                   에이전트 진입점 템플릿
@@ -86,7 +86,7 @@ workspace-setup/
 
 ## 관련 스킬
 
-- [claude-md-slim](https://github.com/seamoon23/claude-md-slim) — 무거운 CLAUDE.md를 핵심 규칙 + 작업유형별 참조 문서(`docs/guide/`)로 분할하는 자매 스킬.
+- [project-md-slim](https://github.com/seamoon23/project-md-slim) — 무거운 CLAUDE.md를 핵심 규칙 + 작업유형별 참조 문서(`docs/guide/`)로 분할하는 자매 스킬.
 
 ## License
 
