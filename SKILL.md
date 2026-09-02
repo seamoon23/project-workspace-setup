@@ -77,6 +77,11 @@ works/_backlog/
 ### 6. CLAUDE.md 병합
 `templates/claude-section.md`의 "폴더 구조" 절을 CLAUDE.md에 추가한다 (이미 유사 절이 있으면 갱신).
 
+**레거시·폐쇄망 프로젝트라면** (판별: pom.xml에 `egovframework`/`org.egovframe` 존재, 구형 Java/Spring 고정, 또는 사용자에게 확인) 추가로:
+- `templates/claude-legacy-rules.md`의 **환경 표 + 절대 규칙**을 CLAUDE.md 최상단에 삽입한다. `/init` 산출물과 겹치는 항목(스택 표·인코딩·DB 방언)은 템플릿 쪽을 우선해 병합.
+- 이 규칙들은 코드에 드러나지 않아 `/init`이 절대 만들지 못하는 층이다 (운영 하한, 버전 동결, 폐쇄망 반입 제약, 우회 금지 정책 등).
+- **플레이스홀더 인터뷰**: 삽입 직후 사용자에게 한 번에 질문한다 — ①운영 JDK/WAS/DB(코드에 없는 값, 필수 — 개발환경과 다를 수 있음, 예: 운영이 JDK 1.6+JEUS) ②레퍼런스 모듈·시크릿 파일·보안 체인(코드에서 후보를 찾아 "이게 맞나" 확인형으로). 값을 채운 뒤 안내 주석은 삭제한다.
+
 ### 7. 검증·보고
 - `git status`: `dev/`·`works/`가 목록에 안 뜨고, AGENTS.md·workspace.md는 추적 대상으로 잡히는지 확인.
 - 이동 전후 파일 개수 대조 (안전 원칙 5).
