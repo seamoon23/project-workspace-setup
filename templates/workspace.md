@@ -1,7 +1,7 @@
 # workspace.md — {PROJECT_NAME} 저장소 구조
 
 > 이 저장소의 **사이트맵**. 파일을 어디에 두고 어디서 찾을지는 이 문서를 기준으로 한다.
-> 작업 지침(코딩 규칙·기술 스택)은 `CLAUDE.md` 참조. 최종 갱신: {DATE}
+> 작업 규칙(운영 하한·절대 규칙·검증)은 `PROJECT.md`, 프로젝트 맥락·기존 지침은 `CLAUDE.md` 참조. 최종 갱신: {DATE}
 
 ---
 
@@ -20,8 +20,9 @@
 ## 루트
 
 ```
-CLAUDE.md            작업 지침 (코딩 규칙·기술 스택·절대 규칙)
-AGENTS.md            에이전트 공용 진입점 (CLAUDE.md 참조)
+PROJECT.md           작업 규칙 (운영 환경·절대 규칙·검증) — 현재 팀 관리
+CLAUDE.md            프로젝트 맥락·기존 지침 — 원본 유지, 최상단에서 @PROJECT.md 임포트
+AGENTS.md            에이전트 공용 진입점 (PROJECT.md·CLAUDE.md 안내)
 workspace.md         ← 이 파일. 저장소 구조
 README.md            프로젝트 소개
 src/                 애플리케이션 소스
